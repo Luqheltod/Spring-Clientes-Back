@@ -10,6 +10,6 @@ import com.german.spring.clientes.back.model.Cliente;
 @Mapper
 public interface ClienteMapper {
 
-	@Select("SELECT * FROM pruebas.tablapruebas")
+	@Select("SELECT * FROM pruebas.cliente")
 	public List<Cliente> findAll();
 }
