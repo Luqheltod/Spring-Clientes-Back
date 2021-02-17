@@ -12,5 +12,7 @@ public interface ClienteService {
 	
 	public void insertCliente(Cliente cliente);
 	
+	public void updateCliente(Cliente cliente);
+	
 	public void delete (Long id);
 }

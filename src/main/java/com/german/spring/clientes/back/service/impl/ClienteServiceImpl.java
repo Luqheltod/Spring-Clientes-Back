@@ -40,4 +40,11 @@ public class ClienteServiceImpl implements ClienteService {
 
 	}
 
+	@Override
+	public void updateCliente(Cliente cliente) {
+		
+		clienteMapper.updateCliente(cliente);
+		
+	}
+
 }
