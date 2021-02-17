@@ -7,4 +7,10 @@ public interface ClienteService {
 
 	
 	public List<Cliente> findAll();
+	
+	public Cliente findClienteById(Long id);
+	
+	public void insertCliente(Cliente cliente);
+	
+	public void delete (Long id);
 }

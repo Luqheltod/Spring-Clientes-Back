@@ -14,11 +14,30 @@ public class ClienteServiceImpl implements ClienteService {
 
 	@Autowired
 	private ClienteMapper clienteMapper;
-	
+
 	@Override
 	public List<Cliente> findAll() {
-		
+
 		return clienteMapper.findAll();
+	}
+
+	@Override
+	public Cliente findClienteById(Long id) {
+
+		return clienteMapper.findClienteById(id);
+	}
+
+	@Override
+	public void insertCliente(Cliente cliente) {
+
+		clienteMapper.insertCliente(cliente);
+	}
+
+	@Override
+	public void delete(Long id) {
+
+		clienteMapper.deleteClienteById(id);
+
 	}
 
 }
