@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.german.spring.clientes.back.model.Cliente;
 import com.german.spring.clientes.back.service.ClienteService;
 
-@CrossOrigin(origins = { "http://localhost:4200" })
+
 @RestController
 @RequestMapping("/api")
 public class ClienteRestController {
